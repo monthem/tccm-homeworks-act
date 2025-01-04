@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "trexio.h"
-// #include "TREXIO_functions.h"
+#include <trexio.h>
+#include "TREXIO_functions.h"
 
-//All below functions are given by the professor
+// All the functions bellow were provided by the professors
+// Here, they are just wrapped for our personal ease of use
 
 //This line is to open a trexio file for reading 
 trexio_t* open_trexio_file(const char* filename){
@@ -121,24 +122,28 @@ void read_two_electron_integrals(trexio_t* trexio_file, int64_t* n_integrals, in
     }
 }
 
-int main(){
+
+
+
+// For debugging / testing purposes
+// int main(){
     
-    const char* filename = "h2o.h5";
+//     const char* filename = "h2o.h5";
 
-    // open this file
-    trexio_t* trexio_file = open_trexio_file(filename);
+//     // open this file
+//     trexio_t* trexio_file = open_trexio_file(filename);
 
-    double nn_energy = read_nuclear_repulsion(trexio_file);
-    int32_t no_mos = read_mo_num(trexio_file);
-    int32_t no_occ = get_number_of_occupied_orbitals(trexio_file);
-    int32_t no_virt;
-    no_virt = no_mos - no_occ;
+//     double nn_energy = read_nuclear_repulsion(trexio_file);
+//     int32_t no_mos = read_mo_num(trexio_file);
+//     int32_t no_occ = get_number_of_occupied_orbitals(trexio_file);
+//     int32_t no_virt;
+//     no_virt = no_mos - no_occ;
 
 
-    printf("I read the nn energy from h20.h5 , it is %.6f au\n", nn_energy);
-    printf("water molecule has %d mos, of which %d are occupied and %d are virtual\n", no_mos, no_occ, no_virt);
-    //close the file
-    close_trexio_file(trexio_file);
+//     printf("I read the nn energy from h20.h5 , it is %.6f au\n", nn_energy);
+//     printf("water molecule has %d mos, of which %d are occupied and %d are virtual\n", no_mos, no_occ, no_virt);
+//     //close the file
+//     close_trexio_file(trexio_file);
 
-    return 0;
-}
+//     return 0;
+// }
