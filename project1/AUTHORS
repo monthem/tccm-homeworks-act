@@ -1,0 +1,13 @@
+Project1 Contributors:
+
+- María Ximena Vargas Chaverri xvch98@gmail.com github.com/xim05: Developed TREXIO_functions.c and hf_energy.c
+- Danilo Marković danilo.markovic@estudiante.uam.es github.com/monthem: Developed mp2_energy.c and main.c
+
+Notes:
+
+- TREXIO_functions.c contains TREXIO functionalities wrapped into functions such as read_2_electron_integrals() for our personal ease of use. However, all the code within the functions in TREXIO_functions are not developed by us. See ithe official TREXIO documentation:
+  trex-coe.github.io/trexio/index.html and 
+  E. Posenitskiy, V. G. Chilkuri, A. Ammar, M. Hapka, K. Pernal, R. Shinde, E. J. Landinez Borda, C. Filippi, K. Nakano, O. Kohulák, S. Sorella, P. de Oliveira Castro, W. Jalby, P. L. Ríos, A. Alavi, and A. Scemama, "TREXIO: A file format and library for quantum chemistry," J. Chem. Phys. 158, 174101 (2023). https://doi.org/10.1063/5.0148161.
+
+- mp2_energy.c 2e integral symmetry handling was copied from hf_energy.c and adjusted for MP2 relevant integrals (ij|kl) where i, j are occupied orbital indices and k,l are virtual orbital indices.
+
