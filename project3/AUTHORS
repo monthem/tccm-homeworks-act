@@ -1,0 +1,7 @@
+Project3 Contributors:
+
+- María Ximena Vargas Chaverri xvch98@gmail.com github.com/xim05: Developed md_io.f90, md_math.f90, md_potential.f90, md_kinetics.f90*, implemented the test programs.
+
+- Danilo Marković danilo.markovic@estudiante.uam.es github.com/monthem: Contributed to md_kinetics.f90*; Developed md_simulation.f90 and main.f90
+
+* Hard wall boundary cell was developed by Danilo Marković. The subroutine is in md_kinetics.f90
